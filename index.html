@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>LightSwitch</title>
+	<link rel="stylesheet" type="text/css" href="assets/css/index.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+	<script src="assets/support/parallax.js/parallax.js"></script>
+	<link href="https://fonts.googleapis.com/css?family=News+Cycle:400,700|Poppins:300,500" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+	<div class="container">
+		<div class="page-header">
+			<img class="logo" src="https://s23.postimg.org/x014l296j/non_Trasnparent2.png">
+			<p class="page-header-text">A product created by members of the Brandeis Computer Science Field Project class.</p>
+			<button class="btn-custom"><a target="blank" href="http://lightswitch2.herokuapp.com/">View our LightSwitch Server</a></button>
+			<button class="btn-custom"><a target="blank" href="https://github.com/Dewar0019/LumensNodeServer">View our Node Server on Github</a></button>
+			<button class="btn-custom"><a target="blank" href="https://github.com/Dewar0019/LightSwitchServer">View our LightSwitch Server on Github</a></button>
+			<div class="credits">
+				<p class="credits-text">Created by members of the Brandeis CSFP class in partnership with <a target="blank" href="https://www.digitallumens.com/">Digital Lumens Inc.</a></p>
+				<img class="team" src="assets/img/team.png">
+			</div>
+		</div>
+		<div class="page-content">
+			<h1 class="content-header">Overview</h1>
+			<p class="content-text">LightSwitch was created as a permanent solution for user control over Digital Lumens' smart LED lighting fixtures. Our simple and easy to use system gives the user full control over each smart LED fixture.</p>
+			<h1 class="content-header">Features</h1>
+			<p class="content-text">+ Our wearable app allows the user to have constant access to all lighting controls for a given room. Normally users spend precious time searching for a light control panel that always seems to be in the last place they think. With LightSwitch, saving time means more productivity!</p>
+			<p class="content-text">+ The LightSwitch system connects directly to the Digital Lumens cloud server to securely access and make changes to your personalized preference data.</p>
+			<p class="content-text">+ LightSwitch supports integration with Google Calendar to make scheduling rooms and checking room availability a breeze.
+			<h1 class="content-header">Our Mission</h1>
+			<p class="content-text">With LightSwitch, the CSFP team is commited to simplifying our users' workflow and eliminating any unnecessary and inneficient tasks. Ultimately our goal is to help our users be as productive and efficient as possible, on small inovation at a time.
+			<h1 class="content-header">Process</h1>
+			<p class="content-text">Our process began with meeting with the Digital Lumens partners and discussing the abilities of their API. We concluded that the ideal product would be a wearable device that gives the user full-control of lighting fixtures in certain rooms.</p>
+			<h1 class="content-header">Results</h1>
+			<p class="content-text">We were able to achieve most of our starting goals with our finished product. The watch app is fully able to control the brightness for smart LED light fixtures in a given room and the Google Calendar feature allows users to create resrvations for different rooms.</p>  
+			<h1 class="content-header">Challenges</h1>
+			<p class="content-text">A major challenge we faced in our development process was the limitation of Bluetooth connectivity to the Apple Watch. The security measures added by Apple made it impossible for us to discover nearby wearables without having to manually add their MAC addresses.</p>
+			<h1 class="content-header">Workflow</h1>
+			<p class="content-text">The smart LED light fixtures in each room are independently controlled by the Digital Lumens gateway. With each room a Raspberry Pi is included to detect the proximity of nearby Bluetooth enabled devices. Once the wearable device is set up and connected to the LightSwitch server, any changes made on the Watch app are send to our cloud server which then talks directly to the Digital Lumens cloud API to make the necessary changes to the light fixtures.</p> 
+			<h1 class="content-header">Setting Up New Devices</h1>
+			<p class="content-text">To register a new Pi/Room with the server we simply run an initialization script that takes in several parameters regarding information of the room. We then check to ensure that the values are unique against the light switch server’s database. If unique we add the new Pi and room to the database. Registering the device online will require the devices Bluetooth MAC Address and device name. This can be retrieved from the iPhone Watch app. After retrieving the information it can be added to specify rooms to allow access. Upon adding these devices the Lightswitch server will push the updated list of devices that have access to each room. Simply after that, if the device walks into the room and open up the application they will be served an interface for that room specifically with control over the lights.</p>
+		</div>
+	</div>
+</body>
+</html>
