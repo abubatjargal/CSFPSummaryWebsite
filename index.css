@@ -1,0 +1,117 @@
+html, body {
+	margin: 0;
+	padding: 0;
+	display: flex;
+	justify-content: center;
+	background-color: #F5F5F5;
+}
+
+.container {
+	position: absolute;
+	width: 1100px;
+	display: flex;
+	justify-content: center;
+	box-shadow: 0px 10px 50px 5px #999;
+	padding-right: 50px;
+	padding-left: 50px;
+	margin-bottom: 50px;
+	padding-bottom: 50px;
+	background-color: white;
+}
+
+.page-header {
+	position: relative;
+	width: 40%;
+	height: auto;
+	top: 30px !important;
+	padding-right: 30px;
+}
+
+.page-content {
+	position: relative;
+	width: 60%;
+	height: auto;
+	top: 20px !important;
+}
+
+.content-header, .content-text {
+	font-family: 'Poppins';
+}
+
+.content-header {
+	font-weight: 500;
+	font-size: 30px;
+}
+
+.content-text {
+	font-weight: 300;
+	font-size: 18px;
+}
+
+.page-header-title1 {
+	font-family: 'News Cycle';
+	font-weight: 700;
+	font-size: 40px;
+	color: #039BE5;
+}
+
+.page-header-title2 {
+	font-family: 'News Cycle';
+	font-weight: 400;
+	font-size: 40px;
+	color: #4FC3F7;
+}
+
+.page-header-text {
+	font-family: 'News Cycle';
+	font-weight: 400;
+	font-size: 20px;
+}
+
+.btn-custom {
+	position: relative;
+	width: 85%;
+	height: 40px;
+	background-color: #039BE5;
+	border: none;
+	color: white;
+	font-family: 'News Cycle';
+	font-weight: 400;
+	font-size: 20px;
+	opacity: 0.7;
+	border-radius: 10px;
+	margin-bottom: 10px;
+	transition: all 0.3s ease 0s;
+}
+
+.btn-custom:hover {
+	background-color: #4FC3F7;
+}
+
+.btn-custom a {
+	text-decoration: none;
+	color: white;
+}
+
+.credits {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+}
+
+.credits-text, .credits-text a {
+	font-family: 'News Cycle';
+	font-weight: 400;
+	font-size: 15px;
+	width: 300px;
+}
+
+.team {
+	width: 350px;
+	height: 133px;
+}
+
+.logo {
+	width: 350px;
+	height: 350px;
+}
